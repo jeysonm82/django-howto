@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="/static/img/favicon.png" />
+
+    <link href="/static/css/base.css" rel="stylesheet">
+    {% block style %}{% endblock %}
+    {% block scripts %}{% endblock %}
+    <title>{% block title %} Django How To's {% endblock  %}</title>
+</head>
+<body class="{%block body_class%}{%endblock%}">
+    <header>
+    {%block header%}
+        {%include "browser/header.html"%}
+    {%endblock%}
+    </header>
+    {% block content %}
+            CONTENT
+    {% endblock %}
+    <footer>
+    {%block footer%}
+        {%include 'browser/footer.html'%}
+    {%endblock%}
+    </footer>
+   </body>
+</html>

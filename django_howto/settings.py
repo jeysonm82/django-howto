@@ -28,7 +28,7 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-EXAMPLE_APPS = ('apps.url_routing',)
+EXAMPLE_APPS = ('apps.url_routing','apps.class_views')
 INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',

@@ -6,5 +6,6 @@ urlpatterns = patterns('',
      url(r'^$', 'browser.views.home', name='home'),
      url(r'^view/(?P<app_name>.+)$', 'browser.views.view_example', name='view'),
      url(r'^routing/', include('apps.url_routing.urls')),
+     url(r'^class_based_views/', include('apps.class_views.urls')),
      url(r'^admin/', include(admin.site.urls)),
 )
